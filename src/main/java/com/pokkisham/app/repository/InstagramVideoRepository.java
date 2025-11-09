@@ -1,0 +1,11 @@
+package com.pokkisham.app.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.pokkisham.app.model.InstagramVideo;
+
+@Repository
+public interface InstagramVideoRepository extends JpaRepository<InstagramVideo,Long> {
+    
+}

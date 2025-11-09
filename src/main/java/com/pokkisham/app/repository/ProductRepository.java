@@ -1,0 +1,12 @@
+package com.pokkisham.app.repository;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.pokkisham.app.model.Product;
+
+public interface ProductRepository extends JpaRepository<Product, String> {
+
+    Optional<Product> findTopByOrderByProductIdDesc();
+}
